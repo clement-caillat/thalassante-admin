@@ -1,0 +1,14 @@
+RewriteEngine On
+
+RewriteRule login/ /thalassante-admin/pages/identification.php
+
+RewriteRule agenda/ /thalassante-admin/pages/agenda.php
+RewriteRule tasks/ /thalassante-admin/pages/tasks.php
+RewriteRule slack/ /thalassante-admin/pages/slack.php
+RewriteRule flux/ /thalassante-admin/pages/diffusion.php
+RewriteRule contact/ /thalassante-admin/pages/contact.php
+RewriteRule team/ /thalassante-admin/pages/team.php
+RewriteRule newsletter/ /thalassante-admin/pages/newsletter.php
+RewriteRule people/ /thalassante-admin/pages/adherents.php
+RewriteRule sheets/ /thalassante-admin/pages/sheets.php
+RewriteRule server/ /thalassante-admin/pages/server.php

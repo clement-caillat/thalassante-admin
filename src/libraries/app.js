@@ -3,7 +3,7 @@ $(window).on('load', function(){
         $('.loading').fadeOut("slow", function(){
             $('.loading').remove();
         });
-    }, 1)
+    }, 500)
 })
 
 
@@ -25,43 +25,41 @@ $(document).ready(function(){
         }
     })
 })
-
-var followers = 0;
-
-function randomise(max) {
-    return Math.floor(Math.random() * Math.floor(max));
-}
-var ctx = document.getElementById('myChart').getContext('2d');
-var a = randomise(200);
-var b = randomise(200);
-var c = randomise(200);
-var d = randomise(200);
-var ctx = document.getElementById('myChart').getContext('2d');
-var myChart = new Chart(ctx, {
-type: 'doughnut',
-data: {
-    labels: ['Youtube', 'Twitter', 'Instagram', 'Facebook'],
-    datasets: [{
-        label: 'Followers',
-        data: [a, b, followers, d],
-        backgroundColor: [
-            'rgba(255, 99, 132, 1)',
-            'cyan',
-            'pink',
-            'blue',
-        ]
-    }]
-},
-options: {
-    scales: {
-        yAxes: [{
-            ticks: {
-                display: false
-            },
-            gridLines: {
-                display: false
-            }
-        }]
-    }
-}
-});
+new Vue({
+    el: "#components-demo"
+})
+// var followers = 0;
+// var ctx = document.getElementById('myChart').getContext('2d');
+// var a = randomise(200);
+// var b = randomise(200);
+// var c = randomise(200);
+// var d = randomise(200);
+// var ctx = document.getElementById('myChart').getContext('2d');
+// var myChart = new Chart(ctx, {
+// type: 'doughnut',
+// data: {
+//     labels: ['Youtube', 'Twitter', 'Instagram', 'Facebook'],
+//     datasets: [{
+//         label: 'Followers',
+//         data: [a, b, followers, d],
+//         backgroundColor: [
+//             'rgba(255, 99, 132, 1)',
+//             'cyan',
+//             'pink',
+//             'blue',
+//         ]
+//     }]
+// },
+// options: {
+//     scales: {
+//         yAxes: [{
+//             ticks: {
+//                 display: false
+//             },
+//             gridLines: {
+//                 display: false
+//             }
+//         }]
+//     }
+// }
+// });
