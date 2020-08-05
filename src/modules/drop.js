@@ -19,10 +19,11 @@ var dropmenu = new Vue({
 })
 
 $(document).click(function(e){
-    if(e.target.id != "userdropbutton" && e.target.id != "userdrop"){
+    if(e.target.id != "userdropbutton" && e.target.id != "dropuser"){
         dropmenu.showuser = false;
     }
     if(e.target.id != "notifdropbutton" && e.target.id != "notifications"){
         dropmenu.shownotifications = false;
     }
+    console.log(e.target.className);
 })

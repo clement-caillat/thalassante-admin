@@ -9,7 +9,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="templates/css/style.css">
+    <link rel="stylesheet" href="templates/css/style.css" media="(min-width: 640px)">
+    <link rel="stylesheet" href="templates/css/phone.css" media="(min-width: 340px) and (max-width: 640px)">
     <link rel="stylesheet" href="templates/css/animations.css">
     <link rel="shortcut icon" href="templates/images/favicon.png" type="image/x-icon">
     <!-- VueJS CDN -->
@@ -65,7 +66,7 @@
         </nav>
         <div class="wrapper" id="dashboard">
             <div class="box main-process">
-                <canvas id="myChart"></canvas>
+
             </div>
             <div class="box" id="instagram-followers">
                 {{ followers }}

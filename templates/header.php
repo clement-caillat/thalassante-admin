@@ -18,24 +18,24 @@
             </div>
             <div class="user">
                 <img id="userdropbutton" src="templates/images/avatars/avatar.jpg" alt="Profile picture" @Click="toggleuser()">
-                <div class="dropdown" id="userdrop" v-show="showuser">
-                    <ul>
+                <div class="dropdown notclick" id="userdrop" v-show="showuser">
+                    <ul id="dropuser">
                         <li>
                             <a href="">
-                                <div class="icon">
+                                <div class="icon notclick">
                                     <i class="fas fa-user-cog"></i>
                                 </div>
-                                <div class="text">
+                                <div class="text notclick">
                                     Mon compte
                                 </div>
                             </a>
                         </li>
                         <li class="red">
                             <a href="?d">
-                                <div class="icon">
+                                <div class="icon notclick">
                                     <i class="fas fa-power-off" style="color: red;"></i>
                                 </div>
-                                <div class="text">
+                                <div class="text notclick">
                                     Déconnexion
                                 </div>
                             </a>
